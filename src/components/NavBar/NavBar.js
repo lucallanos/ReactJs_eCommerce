@@ -1,5 +1,6 @@
 import React from 'react';
 import './NavBar.css';
+import CartWidget from '../CartWidget/CartWidget';
 
 function NavBar() {
     return (
@@ -10,6 +11,7 @@ function NavBar() {
                 <button className='navBar-center-text'>Products</button>
                 <button className='navBar-center-text'>Build your Pc</button>
             </div>
+            <CartWidget />
         </nav>
     )
 }
