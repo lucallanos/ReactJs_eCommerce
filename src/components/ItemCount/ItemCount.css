@@ -1,0 +1,38 @@
+.container p {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.itemCount {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin: 0 0 10px 0;
+}
+
+.itemCount button, input[type="submit"], input[type="reset"] {
+    background: none;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-size: 25px;
+}
+
+.subtraction-btn {
+    color: red;
+}
+
+.count {
+    padding: 0 50px 0 50px;
+    margin: 0;
+}
+
+.sum-btn {
+    color: green;
+}
+
+.add-btn {
+    padding: 0 0 0 30px;
+}
