@@ -1,15 +1,18 @@
 import React from 'react';
 import './NavBar.css';
+// COMPONENTS
 import CartWidget from '../CartWidget/CartWidget';
+// REACT ROUTER DOM
+import { Link } from 'react-router-dom';
 
 function NavBar() {
     return (
         <nav className='navBar'>
-            <h2>Minimum60</h2>
+            <Link className='title-text' to='/'>Minimum60</Link>
             <div className='navBar-center'>
-                <button className='navBar-center-text'>Home</button>
-                <button className='navBar-center-text'>Products</button>
-                <button className='navBar-center-text'>Build your Pc</button>
+                <Link className='navBar-center-text' to='/'>Home</Link>
+                <Link className='navBar-center-text' to='/info'>Info</Link>
+                <Link className='navBar-center-text' to='/contact'>Contact</Link>
             </div>
             <CartWidget />
         </nav>

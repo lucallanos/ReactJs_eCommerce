@@ -1,17 +1,30 @@
-import React, { Component } from 'react';
-import './App.css';
-//Components
-import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import React, { Component } from "react";
+import "./App.css";
+// REACT ROUTER DOM
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// COMPONENTS
+import NavBar from "./components/NavBar/NavBar";
+// VIEWS
+import Home from "./views/Home/Home";
+import Info from "./views/Info/Info";
+import Contact from "./views/Contact/Contact";
+import ItemDetailView from "./views/ItemDetailView/ItemDetailView";
 
 class App extends Component {
   render() {
     return (
-      <div className='App'>
-        <NavBar />
-        <ItemListContainer greeting={'Welcome to Minimum60'} />
-      </div>
-    )
+      <Router>
+        <div className="App">
+          <NavBar />
+          <Switch>
+            <Route path="/" exact component={Home}></Route>
+            <Route path="/info" component={Info}></Route>
+            <Route path="/contact" component={Contact}></Route>
+            <Route path="/detail/:id" component={ItemDetailView}></Route>
+          </Switch>
+        </div>
+      </Router>
+    );
   }
 }
 

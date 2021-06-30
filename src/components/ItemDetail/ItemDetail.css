@@ -1,0 +1,16 @@
+.itemDetail-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.itemDetail-textAndCount {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.itemDetail-textAndCount p {
+  font-size: 30px;
+}
