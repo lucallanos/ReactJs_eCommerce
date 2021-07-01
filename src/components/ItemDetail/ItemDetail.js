@@ -10,14 +10,6 @@ function ItemDetail({ item }) {
       <div className="itemDetail-textAndCount">
         <p>{item.price}</p>
         <ItemCount init={item.init} stock={item.stock} item={item.title} />
-        {console.log(
-          "Init",
-          item.init,
-          "Stock",
-          item.stock,
-          "Title",
-          item.title
-        )}
       </div>
     </div>
   );

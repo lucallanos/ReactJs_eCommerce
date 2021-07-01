@@ -15,7 +15,7 @@ function ItemList({ items }) {
       {items.map((item) => {
         return (
           <div key={item.id}>
-            <Link to={`/detail/${item.id}`}>
+            <Link to={`/item/${item.id}`}>
               <Item item={item} />
             </Link>
           </div>

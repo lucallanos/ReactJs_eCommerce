@@ -18,9 +18,9 @@ class App extends Component {
           <NavBar />
           <Switch>
             <Route path="/" exact component={Home}></Route>
-            <Route path="/info" component={Info}></Route>
-            <Route path="/contact" component={Contact}></Route>
-            <Route path="/detail/:id" component={ItemDetailView}></Route>
+            <Route path="/category/info" component={Info}></Route>
+            <Route path="/category/contact" component={Contact}></Route>
+            <Route path="/item/:id" component={ItemDetailView}></Route>
           </Switch>
         </div>
       </Router>
