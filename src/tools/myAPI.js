@@ -5,7 +5,7 @@ const myApi = [
     title: "Ryzen 5 3400G",
     price: "$65.000",
     stock: 10,
-    init: 0,
+    init: 1,
     pictureURL:
       "https://http2.mlstatic.com/D_NQ_NP_958097-MLA32779890054_112019-O.jpg",
   },
@@ -14,7 +14,7 @@ const myApi = [
     title: "Rtx 3060 Ultra Oc White",
     price: "$165.000",
     stock: 5,
-    init: 0,
+    init: 1,
     pictureURL:
       "https://http2.mlstatic.com/D_NQ_NP_725662-MLA45229819318_032021-O.webp",
   },
@@ -23,7 +23,7 @@ const myApi = [
     title: "Z490 Aorus Xtreme",
     price: "$120.000",
     stock: 5,
-    init: 0,
+    init: 1,
     pictureURL:
       "https://static.gigabyte.com/StaticFile/Image/Global/d4c68f1a8658448d5df671ba132a5386/Product/25004/png/500",
   },
@@ -32,7 +32,7 @@ const myApi = [
     title: "AeroCool Hive",
     price: "$6.500",
     stock: 20,
-    init: 0,
+    init: 1,
     pictureURL:
       "https://aerocool.io/wp-content/uploads/2020/06/Hive-Infographic700x700px-001.png",
   },
@@ -42,7 +42,7 @@ const myApi = [
       "Memoria Team DDR4 16GB (2x8GB) 3600MHz T-Force XTREEM ARGB Mirror CL14",
     price: "$35.000",
     stock: 15,
-    init: 0,
+    init: 1,
     pictureURL:
       "https://http2.mlstatic.com/D_NQ_NP_648015-MLA45018931317_022021-W.jpg",
   },
@@ -51,7 +51,7 @@ const myApi = [
     title: "Fuente Be Quiet! 700W U9 80 Plus Bronze",
     price: "$11.100",
     stock: 12,
-    init: 0,
+    init: 1,
     pictureURL:
       "https://compragamer.net/pga/imagenes_publicadas/compragamer_Imganen_general_23731_Fuente_Be_Quiet__700W_U9_80_Plus_Bronze_06c10bd9-grn.jpg",
   },
