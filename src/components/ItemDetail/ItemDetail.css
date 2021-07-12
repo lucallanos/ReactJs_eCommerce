@@ -1,16 +1,30 @@
 .itemDetail-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.itemDetail-imgAndPriceAndCount {
+  display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.itemDetail-textAndCount {
+.itemDetail-priceAndCount {
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: 50%;
 }
 
-.itemDetail-textAndCount p {
+.itemDetail-priceAndCount p {
   font-size: 30px;
+  margin-top: 0;
+}
+
+.itemDetail-description {
+  max-width: 70%;
+}
+
+.itemDetail-description h2 {
+  text-align: center;
 }

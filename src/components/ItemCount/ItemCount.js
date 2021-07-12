@@ -1,6 +1,51 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import "./ItemCount.css";
+// REACT ROUTER DOM
+import { Link } from "react-router-dom";
 
+function ItemCount({ init, stock, onAdd }) {
+  const [initial, setInitial] = useState(0);
+
+  useEffect(() => {
+    setInitial(init);
+  }, [init]);
+
+  const handleCountDown = () => {
+    return initial > 1 && setInitial(initial - 1);
+  };
+
+  const handleCountUp = () => {
+    return initial < stock && setInitial(initial + 1);
+  };
+
+  const addItems = () => {
+    onAdd(initial);
+    setInitial(1);
+  };
+
+  return (
+    <div className="container">
+      <div className="itemCount">
+        <button className="subtraction-btn" onClick={handleCountDown}>
+          -
+        </button>
+        <p className="count">{initial}</p>
+        <button className="sum-btn" onClick={handleCountUp}>
+          +
+        </button>
+        <Link to="/cart">
+          <button className="add-btn" onClick={addItems}>
+            Add
+          </button>
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+export default ItemCount;
+
+/*
 class ItemCount extends Component {
   constructor({ init, stock, item }) {
     super();
@@ -64,3 +109,4 @@ class ItemCount extends Component {
 }
 
 export default ItemCount;
+*/
