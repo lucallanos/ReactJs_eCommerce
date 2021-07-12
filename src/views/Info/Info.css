@@ -1,5 +1,10 @@
-.text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text p {
+  max-width: 70%;
 }
